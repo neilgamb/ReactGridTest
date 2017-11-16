@@ -1,6 +1,56 @@
-.react-grid-layout{
-    border: 1px solid black;
+html {
+    min-height: 100%;
 }
+
+body {
+    margin: 5px;
+    background-color: rgb(29, 31, 40);
+    background-attachment: fixed;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#242f3a+0,475566+100 */
+    background: #242f3a;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #475566 0%, #242f3a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #475566 0%, #242f3a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #475566 0%, #242f3a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242f3a', endColorstr='#475566', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
 .react-grid-item {
-    border: 1px solid black;
+    background-color: rgb(47, 50, 53);
+    /* border-radius: 5px; */
+}
+
+.react-grid-item:hover {
+    position: relative;
+    /* cursor: move; */
+}
+
+.react-grid-item:active {
+    opacity: .8;
+}
+
+.component-heading {
+    background-color: rgb(24, 29, 34);
+    color: white;
+    margin: 0px;
+    padding: 5px;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    font-size: 1.1rem;
+}
+
+.component-body {
+    padding: 5px;
+    font-size: .9rem;
+    color: rgb(90, 94, 99);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 32px;
+    /* overflow: hidden; */
 }
