@@ -39,6 +39,7 @@ export default class GridMain extends Component {
         return (
             <ResponsiveReactGridLayout
                 className="layout"
+
                 layouts={this.state.layout}
                 compactType={'horizontal'}
                 breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
@@ -50,12 +51,3 @@ export default class GridMain extends Component {
         )
     }
 };
-
-
-
-{/* <div key={i.id}>
-    <h3 className="component-heading">{i.title}</h3>
-    <section className="component-body">
-
-    </section>
-</div> */}
