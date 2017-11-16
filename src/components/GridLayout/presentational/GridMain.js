@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Responsive, WidthProvider } from 'react-grid-layout';
-import ComponentA from './ComponentA';
-import ComponentB from './ComponentB';
-import ComponentC from './ComponentC';
-import ComponentD from './ComponentD';
-import ComponentE from './ComponentE';
-import ComponentF from './ComponentF';
+import ComponentA from '../../ComponentA/ComponentA';
+import ComponentB from '../../ComponentB/ComponentB';
+import ComponentC from '../../ComponentC/ComponentC';
+import ComponentD from '../../ComponentD/ComponentD';
+import ComponentE from '../../ComponentE/ComponentE';
+import ComponentF from '../../ComponentF/ComponentF';
 import _ from 'lodash';
 
 const ResponsiveReactGridLayout = WidthProvider(Responsive);

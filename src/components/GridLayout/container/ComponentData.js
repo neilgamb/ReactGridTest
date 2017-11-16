@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import GridMain from '../presentational/GridMain';
-import ComponentA from '../presentational/ComponentA';
-import ComponentB from '../presentational/ComponentB';
-import ComponentC from '../presentational/ComponentC';
-import ComponentD from '../presentational/ComponentD';
-import ComponentE from '../presentational/ComponentE';
-import ComponentF from '../presentational/ComponentF';
+import ComponentA from '../../ComponentA/ComponentA';
+import ComponentB from '../../ComponentB/ComponentB';
+import ComponentC from '../../ComponentC/ComponentC';
+import ComponentD from '../../ComponentD/ComponentD';
+import ComponentE from '../../ComponentE/ComponentE';
+import ComponentF from '../../ComponentF/ComponentF';
 
 export default class ComponentData extends Component {
     constructor(props) {
