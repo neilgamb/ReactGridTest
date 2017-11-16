@@ -1,0 +1,28 @@
+body {
+    margin: 5px;
+    background-color: rgb(195, 201, 206);
+}
+
+.react-grid-item {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 4px 0px #52636d; */
+}
+
+.react-grid-item:hover {
+    cursor: move;
+}
+
+.component-heading {
+    background-color: #008DFF;
+    color: white;
+    margin: 0px;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.component-body {
+    padding: 5px;
+    font-size: 1rem;
+}
