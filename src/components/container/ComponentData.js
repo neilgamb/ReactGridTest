@@ -14,7 +14,7 @@ export default class ComponentData extends Component {
         this.state = {
             layouts: {
                 lg: [
-                    { i: 'a', x: 0, y: 0, w: 2, h: 2, static: false, isResizable: false },
+                    { i: 'a', x: 0, y: 0, w: 2, h: 2, static: false, isResizable: true },
                     { i: 'b', x: 0, y: 0, w: 3, h: 2, minW: 4, maxW: 4 },
                     { i: 'c', x: 0, y: 2, w: 3, h: 2 },
                     { i: 'd', x: 0, y: 0, w: 1, h: 2, static: false },
