@@ -19,7 +19,7 @@ export default class GridMain extends Component {
         }
     }
     onLayoutChange(newLayout) {
-        console.log("New Layout:", newLayout);
+        // console.log("New Layout:", newLayout);
     }
     generateGridItems() {
         const components = this.props.data.components;
