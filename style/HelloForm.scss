@@ -1,0 +1,17 @@
+#HelloForm {
+    .component-body {
+        overflow: auto;
+    }
+    input {
+        margin: 0px;
+        width: 97%;
+        height: 2rem;
+        font-size: 2rem;
+        padding: 5px;
+        background: none;
+    }
+    p {
+        margin: 0px;
+        font-size: 2rem;
+    }
+}
