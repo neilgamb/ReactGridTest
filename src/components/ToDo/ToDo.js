@@ -15,6 +15,10 @@ export default class ToDo extends Component {
         })
         this.setState({ todos: this.state.todos });
     }
+    deleteTask(deletedTask) {
+        const foundTodo = _.remove(this.state.todos, todo => todo.task === deletedTask);
+        this.setState({ todos: this.state.todos });
+    }
     saveTask(oldTask, newTask) {
         const foundTodo = _.find(this.state.todos, todo => todo.task === oldTask);
         foundTodo.task = newTask;
@@ -28,11 +32,12 @@ export default class ToDo extends Component {
     render() {
         return (
             <div>
-                <CreateToDo createTask={this.createTask.bind(this)} />
+                <CreateToDo todos={this.state.todos} createTask={this.createTask.bind(this)} />
                 <ToDoList
                     todos={this.state.todos}
                     toggleTask={this.toggleTask.bind(this)}
-                    saveTask={this.saveTask.bind(this)} />
+                    saveTask={this.saveTask.bind(this)}
+                    deleteTask={this.deleteTask.bind(this)} />
             </div>
         )
     }

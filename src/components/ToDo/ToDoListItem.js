@@ -22,6 +22,10 @@ export default class ToDoListItem extends Component {
         this.props.saveTask(oldTask, newTask);
         this.setState({ isEditing: false });
     }
+    onDeleteClick() {
+        const deletedTask = this.props.task;
+        this.props.deleteTask(deletedTask);
+    }
     renderActionsSection() {
         const { task, isComplete } = this.props;
         if (this.state.isEditing) {
@@ -35,7 +39,7 @@ export default class ToDoListItem extends Component {
         return (
             <td>
                 <button onClick={this.onEditClick.bind(this)}>Edit</button>
-                <button>Delete</button>
+                <button onClick={this.onDeleteClick.bind(this)}> Delete</button>
             </td>
         );
     }

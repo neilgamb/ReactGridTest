@@ -14,43 +14,43 @@ export default class ComponentData extends Component {
         this.state = {
             layouts: {
                 lg: [
-                    { i: 'a', x: 0, y: 0, w: 4, h: 2, static: false, isResizable: true },
-                    { i: 'b', x: 0, y: 0, w: 3, h: 2, minW: 1, maxW: 4 },
-                    { i: 'c', x: 0, y: 2, w: 3, h: 2 },
-                    { i: 'd', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'e', x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
-                    { i: 'f', x: 4, y: 0, w: 1, h: 2 }
+                    { i: 'a', x: 0, y: 0, w: 4, h: 2 },
+                    { i: 'b', x: 4, y: 0, w: 3, h: 2 },
+                    { i: 'c', x: 7, y: 0, w: 1, h: 2 },
+                    { i: 'd', x: 0, y: 2, w: 3, h: 2 },
+                    { i: 'e', x: 3, y: 2, w: 3, h: 2 },
+                    { i: 'f', x: 6, y: 2, w: 2, h: 2 }
                 ],
                 md: [
-                    { i: 'a', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'b', x: 1, y: 0, w: 3, h: 2, minW: 1, maxW: 4 },
-                    { i: 'c', x: 4, y: 0, w: 2, h: 2 },
-                    { i: 'd', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'e', x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
-                    { i: 'f', x: 4, y: 0, w: 2, h: 2 }
+                    { i: 'a', x: 0, y: 0, w: 2, h: 2 },
+                    { i: 'b', x: 0, y: 2, w: 2, h: 2 },
+                    { i: 'c', x: 2, y: 0, w: 2, h: 2 },
+                    { i: 'd', x: 4, y: 0, w: 2, h: 2 },
+                    { i: 'e', x: 3, y: 2, w: 3, h: 2 },
+                    { i: 'f', x: 2, y: 2, w: 1, h: 2 }
                 ],
                 sm: [
-                    { i: 'a', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'b', x: 1, y: 0, w: 3, h: 2, minW: 1, maxW: 4 },
-                    { i: 'c', x: 4, y: 0, w: 1, h: 2 },
-                    { i: 'd', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'e', x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
-                    { i: 'f', x: 4, y: 0, w: 1, h: 2 }
+                    { i: 'a', x: 0, y: 0, w: 1, h: 2 },
+                    { i: 'b', x: 0, y: 2, w: 3, h: 2 },
+                    { i: 'c', x: 2, y: 0, w: 1, h: 2 },
+                    { i: 'd', x: 1, y: 0, w: 1, h: 2 },
+                    { i: 'e', x: 3, y: 2, w: 1, h: 2 },
+                    { i: 'f', x: 3, y: 0, w: 1, h: 2 }
                 ],
                 xs: [
-                    { i: 'a', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'b', x: 1, y: 0, w: 3, h: 2, minW: 1, maxW: 4 },
-                    { i: 'c', x: 4, y: 0, w: 1, h: 2 },
-                    { i: 'd', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'e', x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
-                    { i: 'f', x: 4, y: 0, w: 1, h: 2 }
+                    { i: 'a', x: 0, y: 0, w: 1, h: 2 },
+                    { i: 'b', x: 0, y: 2, w: 2, h: 2 },
+                    { i: 'c', x: 0, y: 6, w: 1, h: 2 },
+                    { i: 'd', x: 1, y: 0, w: 1, h: 2 },
+                    { i: 'e', x: 0, y: 4, w: 2, h: 2 },
+                    { i: 'f', x: 1, y: 6, w: 1, h: 2 }
                 ],
                 xxs: [
-                    { i: 'a', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'b', x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
+                    { i: 'a', x: 0, y: 0, w: 1, h: 2 },
+                    { i: 'b', x: 1, y: 0, w: 3, h: 2 },
                     { i: 'c', x: 4, y: 0, w: 1, h: 2 },
-                    { i: 'd', x: 0, y: 0, w: 1, h: 2, static: false },
-                    { i: 'e', x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
+                    { i: 'd', x: 0, y: 0, w: 1, h: 2 },
+                    { i: 'e', x: 1, y: 0, w: 3, h: 2 },
                     { i: 'f', x: 4, y: 0, w: 1, h: 2 }
                 ]
             },
