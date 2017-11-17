@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import GridMain from './GridMain';
 import HelloForm from '../HelloForm/HelloForm';
-import ComponentB from '../ComponentB/ComponentB';
+import ToDo from '../ToDo/ToDo';
 import ComponentC from '../ComponentC/ComponentC';
 import ComponentD from '../ComponentD/ComponentD';
 import ComponentE from '../ComponentE/ComponentE';
@@ -56,7 +56,7 @@ export default class ComponentData extends Component {
             },
             components: [
                 { id: 'a', name: 'hello_form', title: "HelloForm", component: HelloForm },
-                { id: 'b', name: 'component_b', title: "ComponentB", component: ComponentB },
+                { id: 'b', name: 'to_do', title: "ToDo", component: ToDo },
                 { id: 'c', name: 'component_c', title: "ComponentC", component: ComponentC },
                 { id: 'd', name: 'component_d', title: "ComponentD", component: ComponentD },
                 { id: 'e', name: 'component_e', title: "ComponentE", component: ComponentE },

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 import HelloForm from '../HelloForm/HelloForm';
-import ComponentB from '../ComponentB/ComponentB';
+import ToDo from '../ToDo/ToDo';
 import ComponentC from '../ComponentC/ComponentC';
 import ComponentD from '../ComponentD/ComponentD';
 import ComponentE from '../ComponentE/ComponentE';
@@ -26,7 +26,7 @@ export default class GridMain extends Component {
         return components.map(function (i) {
             const RenderComponent = i.component;
             return (
-                <div key={i.id}>
+                <div id={i.name} key={i.id}>
                     <h3 className="component-heading">{i.title}</h3>
                     <section className="component-body">
                         <RenderComponent />

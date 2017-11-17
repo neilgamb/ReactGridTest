@@ -21,30 +21,33 @@ body {
       font-size: 1.3rem; }
     body .react-grid-item .component-body {
       padding: 5px;
-      font-size: .9rem;
+      font-size: 1rem;
       color: #979a9e;
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      top: 32px; }
-  body .react-grid-item:hover {
-    position: relative; }
-  body .react-grid-item:active {
-    opacity: .8;
-    color: white; }
+      top: 32px;
+      word-wrap: break-word; }
 
-#HelloForm .component-body {
-  overflow: auto; }
-
-#HelloForm input {
-  margin: 0px;
-  width: 97%;
-  height: 2rem;
-  font-size: 2rem;
+#hello_form input {
+  margin-top: 5px;
+  width: 100%;
+  font-size: 1rem;
+  background: rgba(22, 32, 41, 0.529);
+  color: white;
+  border: none;
   padding: 5px;
-  background: none; }
+  box-sizing: border-box; }
 
-#HelloForm p {
-  margin: 0px;
-  font-size: 2.5rem; }
+#hello_form .output {
+  position: absolute;
+  top: 2.5rem;
+  bottom: 5px;
+  right: 5px;
+  left: 5px;
+  overflow: auto; }
+  #hello_form .output p {
+    margin: 10px 0px;
+    font-size: 2rem;
+    overflow: auto; }

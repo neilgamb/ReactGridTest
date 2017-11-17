@@ -1,17 +1,25 @@
-#HelloForm {
-    .component-body {
-        overflow: auto;
-    }
+#hello_form {
     input {
-        margin: 0px;
-        width: 97%;
-        height: 2rem;
-        font-size: 2rem;
+        margin-top: 5px;
+        width: 100%;
+        font-size: 1rem;
+        background: rgba(22, 32, 41, 0.529);
+        color: white;
+        border: none;
         padding: 5px;
-        background: none;
+        box-sizing: border-box;
     }
-    p {
-        margin: 0px;
-        font-size: 2.5rem;
+    .output {
+        position: absolute;
+        top: 2.5rem;
+        bottom: 5px;
+        right: 5px;
+        left: 5px;
+        overflow: auto;
+        p {
+            margin: 10px 0px;
+            font-size: 2rem;
+            overflow: auto;
+        }
     }
 }
