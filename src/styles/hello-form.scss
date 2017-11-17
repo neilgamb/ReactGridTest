@@ -2,7 +2,6 @@
     input {
         margin-top: 5px;
         width: 100%;
-        font-size: 1rem;
         background: rgba(22, 32, 41, 0.529);
         color: white;
         border: none;
@@ -11,14 +10,13 @@
     }
     .output {
         position: absolute;
-        top: 2.5rem;
-        bottom: 5px;
-        right: 5px;
-        left: 5px;
+        top: 2.3rem;
+        bottom: 10x;
+        right: 10px;
+        left: 10px;
         overflow: auto;
         p {
             margin: 10px 0px;
-            font-size: 2rem;
             overflow: auto;
         }
     }

@@ -30,10 +30,25 @@ body {
       top: 32px;
       word-wrap: break-word; }
 
+::-webkit-scrollbar {
+  display: none; }
+
+::-webkit-scrollbar {
+  display: block;
+  width: 5px;
+  background-color: #3f3f3f; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #242020; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #3f3f3f; }
+
 #hello_form input {
   margin-top: 5px;
   width: 100%;
-  font-size: 1rem;
   background: rgba(22, 32, 41, 0.529);
   color: white;
   border: none;
@@ -42,12 +57,11 @@ body {
 
 #hello_form .output {
   position: absolute;
-  top: 2.5rem;
-  bottom: 5px;
-  right: 5px;
-  left: 5px;
+  top: 2.3rem;
+  bottom: 10x;
+  right: 10px;
+  left: 10px;
   overflow: auto; }
   #hello_form .output p {
     margin: 10px 0px;
-    font-size: 2rem;
     overflow: auto; }

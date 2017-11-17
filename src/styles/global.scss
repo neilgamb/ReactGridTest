@@ -34,3 +34,23 @@ body {
         }
     }
 }
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+ ::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    background-color: rgb(63, 63, 63);
+}
+
+ ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(36, 32, 32);
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(63, 63, 63);
+}
