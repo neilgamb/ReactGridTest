@@ -8,14 +8,14 @@ body {
     background-color: rgb(29, 31, 40);
     background-attachment: fixed;
     background: #242f3a;
-    background: -moz-linear-gradient(-45deg, #475566 0%, #242f3a 100%);
-    background: -webkit-linear-gradient(-45deg, #475566 0%, #242f3a 100%);
-    background: linear-gradient(135deg, #475566 0%, #242f3a 100%);
+    background: -moz-linear-gradient(-45deg, #b8b8b8 0%, #75797e 100%);
+    background: -webkit-linear-gradient(-45deg, #b8b8b8 0%, #75797e 100%);
+    background: linear-gradient(135deg, #b8b8b8 0%, #75797e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242f3a', endColorstr='#475566', GradientType=1);
     .react-grid-item {
-        background-color: rgb(47, 50, 53);
+        background-color: white;
         .component-heading {
-            background-color: rgb(24, 29, 34);
+            background-color: #008DFF;
             color: white;
             margin: 0px;
             padding: 5px;
@@ -24,7 +24,7 @@ body {
         .component-body {
             padding: 5px;
             font-size: 1rem;
-            color: rgb(151, 154, 158);
+            color: #75797e;
             position: absolute;
             bottom: 0;
             left: 0;
