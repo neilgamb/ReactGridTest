@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Responsive, WidthProvider } from 'react-grid-layout';
-import ComponentA from '../../ComponentA/ComponentA';
-import ComponentB from '../../ComponentB/ComponentB';
-import ComponentC from '../../ComponentC/ComponentC';
-import ComponentD from '../../ComponentD/ComponentD';
-import ComponentE from '../../ComponentE/ComponentE';
-import ComponentF from '../../ComponentF/ComponentF';
+import ComponentA from '../ComponentA/ComponentA';
+import ComponentB from '../ComponentB/ComponentB';
+import ComponentC from '../ComponentC/ComponentC';
+import ComponentD from '../ComponentD/ComponentD';
+import ComponentE from '../ComponentE/ComponentE';
+import ComponentF from '../ComponentF/ComponentF';
 import _ from 'lodash';
 
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
@@ -39,7 +39,6 @@ export default class GridMain extends Component {
         return (
             <ResponsiveReactGridLayout
                 className="layout"
-
                 layouts={this.state.layout}
                 compactType={'horizontal'}
                 breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
