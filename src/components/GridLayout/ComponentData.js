@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import GridMain from './GridMain';
-import ComponentA from '../ComponentA/ComponentA';
+import HelloForm from '../HelloForm/HelloForm';
 import ComponentB from '../ComponentB/ComponentB';
 import ComponentC from '../ComponentC/ComponentC';
 import ComponentD from '../ComponentD/ComponentD';
@@ -14,8 +14,8 @@ export default class ComponentData extends Component {
         this.state = {
             layouts: {
                 lg: [
-                    { i: 'a', x: 0, y: 0, w: 2, h: 2, static: false, isResizable: true },
-                    { i: 'b', x: 0, y: 0, w: 3, h: 2, minW: 4, maxW: 4 },
+                    { i: 'a', x: 0, y: 0, w: 4, h: 2, static: false, isResizable: true },
+                    { i: 'b', x: 0, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
                     { i: 'c', x: 0, y: 2, w: 3, h: 2 },
                     { i: 'd', x: 0, y: 0, w: 1, h: 2, static: false },
                     { i: 'e', x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
@@ -55,7 +55,7 @@ export default class ComponentData extends Component {
                 ]
             },
             components: [
-                { id: 'a', name: 'component_a', title: "ComponentA", component: ComponentA },
+                { id: 'a', name: 'hello_form', title: "HelloForm", component: HelloForm },
                 { id: 'b', name: 'component_b', title: "ComponentB", component: ComponentB },
                 { id: 'c', name: 'component_c', title: "ComponentC", component: ComponentC },
                 { id: 'd', name: 'component_d', title: "ComponentD", component: ComponentD },

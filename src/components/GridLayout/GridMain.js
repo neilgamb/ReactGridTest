@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Responsive, WidthProvider } from 'react-grid-layout';
-import ComponentA from '../ComponentA/ComponentA';
+import HelloForm from '../HelloForm/HelloForm';
 import ComponentB from '../ComponentB/ComponentB';
 import ComponentC from '../ComponentC/ComponentC';
 import ComponentD from '../ComponentD/ComponentD';
@@ -44,6 +44,7 @@ export default class GridMain extends Component {
                 breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
                 cols={{ lg: 8, md: 6, sm: 4, xs: 2, xxs: 1 }}
                 margin={[15, 15]}
+                draggableCancel="input,textarea"
                 onLayoutChange={this.onLayoutChange}>
                 {this.generateGridItems()}
             </ResponsiveReactGridLayout>
