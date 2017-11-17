@@ -1,16 +1,3 @@
-#HelloForm .component-body {
-  overflow: auto; }
-#HelloForm input {
-  margin: 0px;
-  width: 97%;
-  height: 2rem;
-  font-size: 2rem;
-  padding: 5px;
-  background: none; }
-#HelloForm p {
-  margin: 0px;
-  font-size: 2rem; }
-
 html {
   min-height: 100%; }
 
@@ -25,30 +12,39 @@ body {
   background: linear-gradient(135deg, #475566 0%, #242f3a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242f3a', endColorstr='#475566', GradientType=1); }
   body .react-grid-item {
-    background-color: #2f3235;
-    /* border-radius: 5px; */ }
+    background-color: #2f3235; }
     body .react-grid-item .component-heading {
       background-color: #181d22;
       color: white;
       margin: 0px;
       padding: 5px;
-      /* border-top-left-radius: 5px;
-      border-top-right-radius: 5px; */
-      font-size: 1.1rem; }
+      font-size: 1.3rem; }
     body .react-grid-item .component-body {
       padding: 5px;
       font-size: .9rem;
-      color: #5a5e63;
+      color: #979a9e;
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      top: 32px;
-      /* overflow: hidden; */ }
+      top: 32px; }
   body .react-grid-item:hover {
-    position: relative;
-    /* cursor: move; */ }
+    position: relative; }
   body .react-grid-item:active {
-    opacity: .8; }
+    opacity: .8;
+    color: white; }
 
-/*# sourceMappingURL=style.css.map */
+#HelloForm .component-body {
+  overflow: auto; }
+
+#HelloForm input {
+  margin: 0px;
+  width: 97%;
+  height: 2rem;
+  font-size: 2rem;
+  padding: 5px;
+  background: none; }
+
+#HelloForm p {
+  margin: 0px;
+  font-size: 2.5rem; }

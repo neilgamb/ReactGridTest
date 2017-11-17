@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "scss": "node-sass --watch ./src/styles -o css"
   },
   "author": "",
   "license": "ISC",
@@ -18,10 +19,13 @@
     "babel-preset-react": "^6.1.18",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
+    "node-sass": "^4.6.1",
     "react-addons-test-utils": "^0.14.7",
+    "sass-loader": "^6.0.6",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
@@ -34,6 +38,8 @@
     "react-redux": "4.3.0",
     "react-router": "^2.0.1",
     "react-slick": "^0.15.4",
-    "redux": "^3.0.4"
+    "redux": "^3.0.4",
+    "sass": "^1.0.0-beta.3",
+    "watch": "^1.0.2"
   }
 }
