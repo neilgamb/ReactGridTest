@@ -9,6 +9,7 @@ export default class InputBox extends Component {
         return (
             <form onChange={this.handleChange.bind(this)}>
             <input
+                placeholder={this.props.currentNum}
                 type="text"
                 ref="createInput" />
             </form>

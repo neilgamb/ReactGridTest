@@ -39,7 +39,7 @@ export default class ToDoListItem extends Component {
         return (
             <td>
                 <button onClick={this.onEditClick.bind(this)}>Edit</button>
-                <button onClick={this.onDeleteClick.bind(this)}> Delete</button>
+                <button onClick={this.onDeleteClick.bind(this)}>Delete</button>
             </td>
         );
     }
