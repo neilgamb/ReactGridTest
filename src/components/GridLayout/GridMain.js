@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 import HelloForm from '../HelloForm/HelloForm';
 import ToDo from '../ToDo/ToDo';
-import ComponentC from '../ComponentC/ComponentC';
+import Calculator from '../Calculator/Calculator';
 import ComponentD from '../ComponentD/ComponentD';
 import ComponentE from '../ComponentE/ComponentE';
 import ComponentF from '../ComponentF/ComponentF';
