@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import InputBox from './InputBox';
+import Display from './Display';
 import CalculatorButtons from './CalculatorButtons';
 
 export default class Calculator extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            currentNum: null,
+            currentNum: 0,
         }
     }
-    handleNumClick(num){
+    handleNumClick(num) {
         console.log(num);
         this.setState({ currentNum: num })
     }
     render() {
         return (
             <div className="calculator-body">
-                <InputBox currentNum={this.state.currentNum}/>
+                <Display currentNum={this.state.currentNum} />
                 <CalculatorButtons handleNumClick={this.handleNumClick.bind(this)} />
             </div>
         )

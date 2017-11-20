@@ -1,24 +1,22 @@
 #calculator {
-    .calculator-body{
+    .calculator-body {
         height: 100%;
         display: flex;
         flex-direction: column;
-        form {
+        .current-num-display {
             height: 15%;
-        }
-        input {
-            height: 100%;
             width: 100%;
             box-sizing: border-box;
             font-size: 1.5rem;
-            border-radius: 5px;
+            margin: 0px;
+            padding: 5px 8px;
         }
         .button-section {
-            height: 85%;
+            height: 80%;
             table {
                 height: 100%;
                 width: 100%;
-                tbody{
+                tbody {
                     height: 100%;
                     display: flex;
                     flex-direction: column;
@@ -29,7 +27,7 @@
                         td {
                             width: 25%;
                             position: relative;
-                            button{
+                            button {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
