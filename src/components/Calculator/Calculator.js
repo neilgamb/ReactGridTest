@@ -22,7 +22,7 @@ export default class Calculator extends Component {
             firstNum = firstNum.toString().concat(num.toString());
             this.setState({ currentFirstNum: firstNum });
             console.log(firstNum);
-        }
+        } 
         // this.setState({ currentNum: result })
     }
     handlePlusClick(){
