@@ -7,18 +7,48 @@ export default class Calculator extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentNum: 0,
+            currentFirstNum: '',
+            firstEntered: false,
+            currentSecondNum: null,
+            secondEntered: false,
+            currentOp: '',
+            result: '',
         }
     }
     handleNumClick(num) {
-        console.log(num);
-        this.setState({ currentNum: num })
+        let firstNum = this.state.currentFirstNum;
+        let secondNum;
+        if(!this.state.firstEntered){
+            firstNum = firstNum.toString().concat(num.toString());
+            this.setState({ currentFirstNum: firstNum });
+            console.log(firstNum);
+        }
+        // this.setState({ currentNum: result })
+    }
+    handlePlusClick(){
+        this.setState({
+            currentOp: "sum"
+        })
+    }
+    handleMinusClick(num){
+
+    }
+    handleMultClick(num){
+
+    }
+    handleDivClick(num){
+
     }
     render() {
         return (
             <div className="calculator-body">
-                <Display currentNum={this.state.currentNum} />
-                <CalculatorButtons handleNumClick={this.handleNumClick.bind(this)} />
+                <Display currentNum={this.state.currentFirstNum} />
+                <CalculatorButtons 
+                handleNumClick={this.handleNumClick.bind(this)}
+                handlePlusClick={this.handlePlusClick.bind(this)}
+                handleMinusClick={this.handleMinusClick.bind(this)}
+                handleMultClick={this.handleMultClick.bind(this)}
+                handleDivClick={this.handleDivClick.bind(this)} />
             </div>
         )
     }
