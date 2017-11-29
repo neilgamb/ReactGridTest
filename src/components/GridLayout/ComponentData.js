@@ -12,6 +12,14 @@ export default class ComponentData extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            components: [
+                { id: 'a', name: 'hello_form', title: "HelloForm", component: HelloForm },
+                { id: 'b', name: 'to_do', title: "ToDo", component: ToDo },
+                { id: 'c', name: 'calculator', title: "Calculator", component: Calculator },
+                { id: 'd', name: 'component_d', title: "ComponentD", component: ComponentD },
+                { id: 'e', name: 'component_e', title: "ComponentE", component: ComponentE },
+                { id: 'f', name: 'component_f', title: "ComponentF", component: ComponentF }
+            ],
             layouts: {
                 lg: [
                     { i: 'a', x: 0, y: 0, w: 4, h: 2 },
@@ -54,17 +62,29 @@ export default class ComponentData extends Component {
                     { i: 'f', x: 4, y: 0, w: 1, h: 2 }
                 ]
             },
-            components: [
-                { id: 'a', name: 'hello_form', title: "HelloForm", component: HelloForm },
-                { id: 'b', name: 'to_do', title: "ToDo", component: ToDo },
-                { id: 'c', name: 'calculator', title: "Calculator", component: Calculator },
-                { id: 'd', name: 'component_d', title: "ComponentD", component: ComponentD },
-                { id: 'e', name: 'component_e', title: "ComponentE", component: ComponentE },
-                { id: 'f', name: 'component_f', title: "ComponentF", component: ComponentF }
-            ]
+            newCounter: 0
         }
     }
+    onAddItem() {
+        // console.log('adding', 'n' + this.state.newCounter);
+        this.setState({
+            components: this.state.components.concat({
+                id: 'n' + this.state.newCounter,
+                x: 0,
+                y: Infinity,
+                w: 2,
+                h: 2,
+                name: 'new component',
+                title: 'New Component',
+                component: ComponentF
+            }),
+            newCounter: this.state.newCounter + 1
+        })
+    }
     render() {
-        return <GridMain data={this.state} />
+        console.log(this.state)
+        return <GridMain
+            onAddItem={this.onAddItem.bind(this)}
+            data={this.state} />
     }
 };

@@ -46,6 +46,13 @@ body {
   border-radius: 5px;
   background-color: #3f3f3f; }
 
+.grid-header {
+  padding: 10px 15px 0px 15px; }
+  .grid-header .add-comp {
+    display: inline-block;
+    padding: 10px;
+    background: white; }
+
 #hello_form input {
   margin-top: 5px;
   width: 100%;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Responsive, WidthProvider } from 'react-grid-layout';
+import GridHeader from './GridHeader';
 import HelloForm from '../HelloForm/HelloForm';
 import ToDo from '../ToDo/ToDo';
 import Calculator from '../Calculator/Calculator';
@@ -25,6 +26,7 @@ export default class GridMain extends Component {
         const components = this.props.data.components;
         return components.map(function (i) {
             const RenderComponent = i.component;
+            console.log(i.id)
             return (
                 <div id={i.name} key={i.id}>
                     <h3 className="component-heading">{i.title}</h3>
@@ -37,17 +39,20 @@ export default class GridMain extends Component {
     }
     render() {
         return (
-            <ResponsiveReactGridLayout
-                className="layout"
-                layouts={this.state.layout}
-                compactType={'horizontal'}
-                breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
-                cols={{ lg: 8, md: 6, sm: 4, xs: 2, xxs: 1 }}
-                margin={[15, 15]}
-                draggableCancel="input,textarea"
-                onLayoutChange={this.onLayoutChange}>
-                {this.generateGridItems()}
-            </ResponsiveReactGridLayout>
+            <div>
+                <GridHeader onAddItem={this.props.onAddItem} />
+                <ResponsiveReactGridLayout
+                    className="layout"
+                    layouts={this.state.layout}
+                    compactType={'horizontal'}
+                    breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+                    cols={{ lg: 8, md: 6, sm: 4, xs: 2, xxs: 1 }}
+                    margin={[15, 15]}
+                    draggableCancel="input,textarea"
+                    onLayoutChange={this.onLayoutChange}>
+                    {this.generateGridItems()}
+                </ResponsiveReactGridLayout>
+            </div>
         )
     }
 };
