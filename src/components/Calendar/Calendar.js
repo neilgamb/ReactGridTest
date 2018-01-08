@@ -8,17 +8,25 @@ export default class Calendar extends Component {
     constructor(props){
         super(props);
         this.state = {
-            month: new Date()
+            month: new Date(),
+            selected: null
         }
     }
     select(day){
-        console.log(day);
-        this.props.selected = day.date;
-        this.forceUpdate();
+        this.setState({selected: day.date})
+    }
+    next(){
+        let month = moment(this.state.month);
+        month.add(1, "M");
+        this.setState({ month: month });
+    }
+    previous(){
+        let month = moment(this.state.month);
+        month.add(-1, "M");
+        this.setState({ month: month });
     }
     renderMonthLabel(){
-        console.log(moment(this.state.month).format('MMMM YYYY'))
-        return <span><Moment format="MMMM YYYY">{this.state.month}</Moment></span>;
+        return <span className="header-title"><Moment format="MMMM YYYY">{this.state.month}</Moment></span>;
     }
     renderWeeks(){
         let weeks = [],
@@ -32,8 +40,8 @@ export default class Calendar extends Component {
                     key={date.toString()} 
                     date={date.clone()} 
                     month={this.state.month} 
-                    select={this.select} 
-                    //selected={this.props.selected} 
+                    select={this.select.bind(this)} 
+                    selected={this.state.selected} 
                     />
                 );
             date.add(1, "w");
@@ -44,11 +52,11 @@ export default class Calendar extends Component {
     }
     render() {
         return (
-            <div className="calendar">
+            <div className="calendar-main">
                 <div className="header">
-                    <i className="fa fa-angle-left" onClick={this.previous}></i>
+                    <i className="fa fa-angle-left" onClick={this.previous.bind(this)}></i>
                     {this.renderMonthLabel()}
-                    <i className="fa fa-angle-right" onClick={this.next}></i>
+                    <i className="fa fa-angle-right" onClick={this.next.bind(this)}></i>
                 </div>
                 {/* <DayNames /> */}
                 {this.renderWeeks()}

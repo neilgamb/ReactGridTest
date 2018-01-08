@@ -107,3 +107,37 @@ body {
               transform: translate(-50%, -50%);
               height: 90%;
               width: 90%; }
+
+#calendar .calendar-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  #calendar .calendar-main .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    height: 17%; }
+    #calendar .calendar-main .header .header-title {
+      width: 80%;
+      text-align: center;
+      border: 1px solid #ccc; }
+    #calendar .calendar-main .header .fa {
+      width: 10%;
+      border: 1px solid #ccc;
+      text-align: center;
+      padding-top: 2px; }
+  #calendar .calendar-main .week {
+    height: 17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #calendar .calendar-main .week .day-container {
+      width: 14%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc; }
+      #calendar .calendar-main .week .day-container .day {
+        display: inline-block; }

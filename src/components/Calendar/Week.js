@@ -17,12 +17,14 @@ export default class Week extends Component {
             date: date
         };
         days.push(
-                <span 
-                    key={day.date.toString()} 
-                    className={"day" + (day.isToday ? " today" : "") + (day.isCurrentMonth ? "" : " different-month") + (day.date.isSame(this.props.selected) ? " selected" : "")} 
-                    onClick={this.props.select.bind(null, day)}>
-                    {day.number}
-                </span>
+                <div className="day-container">
+                    <span 
+                        key={day.date.toString()} 
+                        className={"day" + (day.isToday ? " today" : "") + (day.isCurrentMonth ? "" : " different-month") + (day.date.isSame(this.props.selected) ? " selected" : "")} 
+                        onClick={this.props.select.bind(null, day)}>
+                        {day.number}
+                    </span>
+                </div>
             );
         date = date.clone();
         date.add(1, "d");
