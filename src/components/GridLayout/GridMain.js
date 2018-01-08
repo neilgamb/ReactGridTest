@@ -5,7 +5,7 @@ import GridHeader from './GridHeader';
 import HelloForm from '../HelloForm/HelloForm';
 import ToDo from '../ToDo/ToDo';
 import Calculator from '../Calculator/Calculator';
-import ComponentD from '../ComponentD/ComponentD';
+import Calendar from '../Calendar/Calendar';
 import ComponentE from '../ComponentE/ComponentE';
 import ComponentF from '../ComponentF/ComponentF';
 import _ from 'lodash';
@@ -26,7 +26,6 @@ export default class GridMain extends Component {
         const components = this.props.data.components;
         return components.map(function (i) {
             const RenderComponent = i.component;
-            console.log(i.id)
             return (
                 <div id={i.name} key={i.id}>
                     <h3 className="component-heading">{i.title}</h3>

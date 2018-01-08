@@ -4,7 +4,7 @@ import GridMain from './GridMain';
 import HelloForm from '../HelloForm/HelloForm';
 import ToDo from '../ToDo/ToDo';
 import Calculator from '../Calculator/Calculator';
-import ComponentD from '../ComponentD/ComponentD';
+import Calendar from '../Calendar/Calendar';
 import ComponentE from '../ComponentE/ComponentE';
 import ComponentF from '../ComponentF/ComponentF';
 
@@ -16,7 +16,7 @@ export default class ComponentData extends Component {
                 { id: 'a', name: 'hello_form', title: "HelloForm", component: HelloForm },
                 { id: 'b', name: 'to_do', title: "ToDo", component: ToDo },
                 { id: 'c', name: 'calculator', title: "Calculator", component: Calculator },
-                { id: 'd', name: 'component_d', title: "ComponentD", component: ComponentD },
+                { id: 'd', name: 'calendar', title: "Calendar", component: Calendar },
                 { id: 'e', name: 'component_e', title: "ComponentE", component: ComponentE },
                 { id: 'f', name: 'component_f', title: "ComponentF", component: ComponentF }
             ],
@@ -82,7 +82,6 @@ export default class ComponentData extends Component {
         })
     }
     render() {
-        console.log(this.state)
         return <GridMain
             onAddItem={this.onAddItem.bind(this)}
             data={this.state} />
