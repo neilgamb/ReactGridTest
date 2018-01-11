@@ -6,7 +6,7 @@ import HelloForm from '../HelloForm/HelloForm';
 import ToDo from '../ToDo/ToDo';
 import Calculator from '../Calculator/Calculator';
 import Calendar from '../Calendar/Calendar';
-import ComponentE from '../ComponentE/ComponentE';
+import SimpleList from '../SimpleList/SimpleList';
 import ComponentF from '../ComponentF/ComponentF';
 import _ from 'lodash';
 

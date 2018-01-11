@@ -5,49 +5,49 @@ import moment from 'moment';
 import Week from './Week';
 
 export default class Calendar extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             month: new Date(),
             selected: null
         }
     }
-    select(day){
-        this.setState({selected: day.date})
+    select(day) {
+        this.setState({ selected: day.date })
     }
-    next(){
+    next() {
         let month = moment(this.state.month);
         month.add(1, "M");
         this.setState({ month: month });
     }
-    previous(){
+    previous() {
         let month = moment(this.state.month);
         month.add(-1, "M");
         this.setState({ month: month });
     }
-    renderMonthLabel(){
+    renderMonthLabel() {
         return <span className="header-title"><Moment format="MMMM YYYY">{this.state.month}</Moment></span>;
     }
-    renderWeeks(){
+    renderWeeks() {
         let weeks = [],
             done = false,
-            date = moment(this.state.month).clone().startOf("month").add("w" -1).day("Sunday"),
+            date = moment(this.state.month).clone().startOf("month").add("w" - 1).day("Sunday"),
             monthIndex = date.month(),
             count = 0;
         while (!done) {
             weeks.push(
-                <Week 
-                    key={date.toString()} 
-                    date={date.clone()} 
-                    month={this.state.month} 
-                    select={this.select.bind(this)} 
-                    selected={this.state.selected} 
-                    />
-                );
+                <Week
+                    key={date.toString()}
+                    date={date.clone()}
+                    month={this.state.month}
+                    select={this.select.bind(this)}
+                    selected={this.state.selected}
+                />
+            );
             date.add(1, "w");
             done = count++ > 2 && monthIndex !== date.month();
             monthIndex = date.month();
-            }
+        }
         return weeks;
     }
     render() {
@@ -60,7 +60,7 @@ export default class Calendar extends Component {
                 </div>
                 {/* <DayNames /> */}
                 {this.renderWeeks()}
-          </div>
+            </div>
         )
     }
 };

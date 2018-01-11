@@ -5,7 +5,7 @@ import HelloForm from '../HelloForm/HelloForm';
 import ToDo from '../ToDo/ToDo';
 import Calculator from '../Calculator/Calculator';
 import Calendar from '../Calendar/Calendar';
-import ComponentE from '../ComponentE/ComponentE';
+import SimpleList from '../SimpleList/SimpleList';
 import ComponentF from '../ComponentF/ComponentF';
 
 export default class ComponentData extends Component {
@@ -17,7 +17,7 @@ export default class ComponentData extends Component {
                 { id: 'b', name: 'to_do', title: "ToDo", component: ToDo },
                 { id: 'c', name: 'calculator', title: "Calculator", component: Calculator },
                 { id: 'd', name: 'calendar', title: "Calendar", component: Calendar },
-                { id: 'e', name: 'component_e', title: "ComponentE", component: ComponentE },
+                { id: 'e', name: 'simple_list', title: "SimpleList", component: SimpleList },
                 { id: 'f', name: 'component_f', title: "ComponentF", component: ComponentF }
             ],
             layouts: {
