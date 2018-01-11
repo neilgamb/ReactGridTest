@@ -6,7 +6,7 @@ export default class SimpleList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            items: getItems(50)
+            items: getItems(2)
         }
         this.onDragEnd = this.onDragEnd.bind(this);
     }
